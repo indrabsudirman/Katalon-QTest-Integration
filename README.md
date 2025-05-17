@@ -52,5 +52,7 @@ adb shell pm list packages | grep blibli
 In the value `test_run_id` you need to put the Test Run ID from qTest. To find the Test Run ID you can use the following steps:
 
 - Open the Test Execution Tab in qTest
-- Right click on the Test Run you want to copy the ID. The last url will like this : https://Your_Subdomain.qtestnet.com/p/44584/portal/project#tab=testexecution&object=3&id=**132323451**
+  ![image](https://github.com/user-attachments/assets/a58a3809-8419-4f2c-85f0-8ed1b2f7eea5)
+
+- Right click on the Test Run ID as shown image above, that you want to copy the ID. The last url will like this : https://Your_Subdomain.qtestnet.com/p/44584/portal/project#tab=testexecution&object=3&id=**132323451**
 - The Test Run ID will be 132323451
