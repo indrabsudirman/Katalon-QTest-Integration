@@ -81,35 +81,26 @@ class LogListener {
 		def mapping = CustomKeywords.'utils.Utility.getTestCaseMapping'(testCaseId)
 
 		if (mapping != null) {
-			// Bisa proses test_steps di sini atau update qTest langsung
-			testRunId = mapping.test_run_id          // Output: 13232418
+			testRunId = mapping.test_run_id
 			println "TestRun Id is ${testRunId}"
 
-			// Update status di dalam data
 			mapping.data.exe_start_date = GlobalVariable.testcaseStartTime
 			mapping.data.exe_end_date = endTime
 			mapping.data.status = status.name() 
 			mapping.data.test_step_logs.each { it.status = status.name() }
 
-			// Convert ke JSON (string) untuk dijadikan payload
 			def requestBody = JsonOutput.toJson(mapping.data)
 
-			// (Opsional) print untuk verifikasi
 			println JsonOutput.prettyPrint(requestBody)
 
 			String qTestUrl = "${Utility.getQTestProperties("QTEST_BASEURL")}/api/v3/projects/${Utility.getQTestProperties("QTEST_PROJECT_ID")}/test-runs/${testRunId}/auto-test-logs"
-
-			// Nanti dihapus
-			println "linknya : ${qTestUrl}"
 
 			Map body = mapping.data 
 
 			def response = APIHelper.sendPostRequest(qTestUrl, body)
 
-			// Parse dulu biar valid JSON
 			def jsonResponse = new JsonSlurper().parseText(response.getResponseText())
 
-			// Lalu pretty print
 			println "Response from qTest API:\n" + JsonOutput.prettyPrint(JsonOutput.toJson(jsonResponse))
 		} else {
 			println "Tidak ada mapping ditemukan untuk: $testCaseId"

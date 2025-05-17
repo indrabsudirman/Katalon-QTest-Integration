@@ -51,7 +51,6 @@ public class Utility {
 
 			def json = new JsonSlurper().parse(jsonFile)
 
-			// Cari object yang cocok
 			def match = json.find { it.katalon_test_cases_id == testCaseId }
 
 			if (match) {
