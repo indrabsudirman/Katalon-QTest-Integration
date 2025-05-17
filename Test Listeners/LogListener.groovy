@@ -77,7 +77,7 @@ class LogListener {
 				break
 		}
 
-		def testCaseId = str.substring(testCaseName.lastIndexOf('TC-'))
+		def testCaseId = testCaseName.substring(testCaseName.lastIndexOf('TC-'))
 		def mapping = CustomKeywords.'utils.Utility.getTestCaseMapping'(testCaseId)
 
 		if (mapping != null) {
