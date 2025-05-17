@@ -22,7 +22,7 @@ This project aims to:
 ### 1. Clone the repository and open in Katalon Studio
 
 ```bash
-git clone https://github.com/username/katalon-mobile-qtest.git
+git clone git@github.com:indrabsudirman/Katalon-QTest-Integration.git
 ```
 
 ### 2. Create a qTest account
