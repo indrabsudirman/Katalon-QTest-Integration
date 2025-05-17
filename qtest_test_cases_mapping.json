@@ -1,0 +1,44 @@
+[
+  {
+    "test_run_id": Your_Test_Run_ID (Integer),
+    "katalon_test_cases_id": "TC-0001",
+    "katalon_test_cases_name":"Test Cases/Success Login with Valid Data TC-0001",
+    "data": {
+      "exe_start_date": "2025-05-11T14:48:01.008Z",
+      "exe_end_date": "2025-05-11T14:55:01.008Z",
+      "note": "Run with Automation",
+      "status": "",
+      "order": 0,
+      "test_step_logs": [
+        {
+          "order": 1,
+          "description": "User at prelogin page",
+          "expected_result": "Validate: User at prelogin page (Title, Button Login, SignUp) are visible",
+          "actual_result": "Validate: User at prelogin page (Title, Button Login, SignUp) are visible",
+          "status": ""
+        },
+        {
+          "order": 2,
+          "description": "Click Login",
+          "expected_result": "Validate: User at login page (Field EditText UserName and Password) Button Sign In, and Textview Sign Up are visible",
+          "actual_result": "Validate: User at login page (Field EditText UserName and Password) Button Sign In, and Textview Sign Up are visible",
+          "status": ""
+        },
+        {
+          "order": 3,
+          "description": "Fill the field with the valid credentials",
+          "expected_result": "All mandatory field are filled",
+          "actual_result": "All mandatory field are filled",
+          "status": ""
+        },
+        {
+          "order": 4,
+          "description": "Click Sign In",
+          "expected_result": "Validate: User at the Mainpage, validate the title, menus transfer, topup, amount are visible ",
+          "actual_result": "Validate: User at the Mainpage, validate the title, menus transfer, topup, amount are visible ",
+          "status": ""
+        }
+      ]
+    }
+  }
+]

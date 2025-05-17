@@ -1,0 +1,30 @@
+.gradle
+
+bin
+
+Reports
+
+Libs
+
+output
+
+!output/.gitkeep
+build
+
+.classpath
+
+.project
+
+.cache
+/bin/
+/Libs/
+/.settings/
+/.classpath
+.svn/
+.cache/
+
+qtest.properties
+
+.DS_Store
+.DS_Store - Keywords
+.DS_Store - Object Repository
