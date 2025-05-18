@@ -57,3 +57,14 @@ In the value `test_run_id` you need to put the Test Run ID from qTest. To find t
 - Right click on the Test Run ID as shown image above, that you want to copy the ID. The last url will like this : https://Your_Subdomain.qtestnet.com/p/44584/portal/project#tab=testexecution&object=3&id=**132323451**
 - The Test Run ID will be 132323451
 - Please note that, the `data` property is object that has `test_step_logs` array. It represent the test steps from qTest. The goal is to match the test steps from qTest with the test steps from Katalon Studio. So you can update the `status` in each test step. In my case, I create the test steps in this file using qTest API using Python script.
+
+![0518 gif](https://github.com/user-attachments/assets/e3a90430-a3ae-4efd-9487-e75ba903f394)
+
+[![Watch on YouTube](https://github.com/user-attachments/assets/da82eae9-b838-456a-9527-539992a1a9cc)](https://drive.google.com/file/d/12HwcNFkrh2G9N6NlSeUy8Gxvkw1cUXo-/view?usp=sharing)
+
+See on the qTest, the date execution is same as the response
+![image](https://github.com/user-attachments/assets/20c2d7b0-e296-4ede-a69b-2373b377ce90)
+
+See the detail step
+![image](https://github.com/user-attachments/assets/aaa0a2fc-52bc-4332-bdcf-1868ee389c2a)
+
